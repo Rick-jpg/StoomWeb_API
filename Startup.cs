@@ -54,7 +54,7 @@ namespace StoomWeb_API
 
             services.AddCors();
 
-            var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret:"].ToString());
+            var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_Secret"].ToString());
 
             services.AddAuthentication(x =>
             {
@@ -85,7 +85,7 @@ namespace StoomWeb_API
             }
 
             app.UseCors(builder =>
-            builder.WithOrigins(Configuration["ApplicationSettings:Client_URL:"].ToString())
+            builder.WithOrigins(Configuration["ApplicationSettings:Client_URL"].ToString())
             .AllowAnyHeader()
             .AllowAnyMethod());
 
