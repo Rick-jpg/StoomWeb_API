@@ -34,6 +34,7 @@ namespace StoomWeb_API.Controllers
         //Post : api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
+            model.Role = "Admin";
             var applicationuser = new ApplicationUser()
             {
                 UserName = model.UserName,
@@ -43,6 +44,7 @@ namespace StoomWeb_API.Controllers
             try
             {
                 var result = await _userManager.CreateAsync(applicationuser, model.Password);
+                await _userManager.AddToRoleAsync(applicationuser, model.Role);
                 return Ok(result);
             }
             catch (Exception)
@@ -59,11 +61,16 @@ namespace StoomWeb_API.Controllers
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
+                //get role assigned to user
+                var role = await _userManager.GetRolesAsync(user);
+                IdentityOptions _options = new IdentityOptions();
+
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                   {
-                    new Claim("User ID", user.Id.ToString())
+                    new Claim("User ID", user.Id.ToString()),
+                    new Claim(_options.ClaimsIdentity.RoleClaimType,role.FirstOrDefault())
                   }),
                     Expires = DateTime.UtcNow.AddMinutes(5),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_appSettings.JWT_Secret)), SecurityAlgorithms.HmacSha512Signature)
