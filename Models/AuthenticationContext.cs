@@ -15,5 +15,6 @@ namespace StoomWeb_API.Models
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<GameDetail> gameDetails { get; set; }
     }
 }

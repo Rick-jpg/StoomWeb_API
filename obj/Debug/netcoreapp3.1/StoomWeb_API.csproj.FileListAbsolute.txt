@@ -298,6 +298,14 @@ C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\Microsoft
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\obj\Debug\netcoreapp3.1\StoomWeb_API.csproj.CoreCompileInputs.cache
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\obj\Debug\netcoreapp3.1\StoomWeb_API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rickv\source\repos\Stoom\StoomWeb_API\obj\Debug\netcoreapp3.1\StoomWeb_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\rickv\source\repos\Stoom\StoomWeb_API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll

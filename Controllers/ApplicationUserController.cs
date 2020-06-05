@@ -34,7 +34,7 @@ namespace StoomWeb_API.Controllers
         //Post : api/ApplicationUser/Register
         public async Task<Object> PostApplicationUser(ApplicationUserModel model)
         {
-            model.Role = "Admin";
+            model.Role = "User";
             var applicationuser = new ApplicationUser()
             {
                 UserName = model.UserName,
